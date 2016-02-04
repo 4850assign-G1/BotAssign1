@@ -9,7 +9,7 @@ This is the starter webapp for Assignment 1
 Team Members
 ************
 Emilio Wu 
-Khang Tran  
+Khang Tran - Acknowledged
 Mark Batin 
 Anderson Phan 
 
