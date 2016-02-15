@@ -11,9 +11,14 @@ class Home extends Application {
     }
 
     public function index() {
+        $this->data['pagebody'] = 'Homepage';
         $this->load->view('_MasterpageHeader');
         $this->load->view('_MasterpageNavBar');
+<<<<<<< HEAD
 		$this->gameStatus();
+=======
+        $this->gameStatus();
+>>>>>>> refs/remotes/4850assign-G1/dev_2
         $this->playerInfo();
 		$this->userLogin();
     }
@@ -63,9 +68,8 @@ class Home extends Application {
         
         $players['playerTable'] = $table;
 
-        $this->data['playerInfo'] = $this->parser->parse('_playerTable', $players, true);
-
-        $this->parser->parse('Homepage', $this->data);
+        $this->data['playerInfo'] = $this->parser->parse('_playerTable', $players, true);        
+        $this->render();
     }
 
 }

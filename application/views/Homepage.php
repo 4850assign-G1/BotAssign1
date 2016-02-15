@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -37,3 +38,18 @@ and open the template in the editor.
         ?>
     </body>
 </html>
+=======
+<div id="gameStatus">
+    <h2 class = "text">Game Status</h2>
+    <p id="statusContent">
+        <table id="gameStats"><tr>{gameStatus}</tr></table>
+    </p>
+</div>
+
+ <!-- Right bar (Players Info) !-->
+ <div id="right_container">
+     <h2 class = "text">Player Info</h2>
+     {playerInfo}
+ </div>
+</div>
+>>>>>>> refs/remotes/4850assign-G1/dev_2
