@@ -18,7 +18,7 @@ and open the template in the editor.
             <div id="gameStatus">
                 <h2 class = "text">Game Status</h2>
                 <p id="statusContent">
-					<table id="gameStats"><tr>{gameStatus}</tr></table>
+                    You're Welcome:)
                 </p>
             </div>
              <!-- Right bar (Players Info) !-->

@@ -14,30 +14,10 @@ class Home extends Application {
         $this->data['pagebody'] = 'Homepage';
         $this->load->view('_MasterpageHeader');
         $this->load->view('_MasterpageNavBar');
-<<<<<<< HEAD
 		$this->gameStatus();
-=======
-        $this->gameStatus();
->>>>>>> refs/remotes/4850assign-G1/dev_2
         $this->playerInfo();
 		$this->userLogin();
     }
-	
-	private function gameStatus() {
-		$this->load->model('GameStatus');
-		$query = $this->GameStatus->gameSummary();
-		
-		$gameStatus = array();
-		
-		foreach ($query as $stat) {
-			$gameSummary[] = (array) $stat;	
-		}
-		
-		$Status['seriesInfo'] = $gameSummary;
-		
-		$this->data['gameStatus'] = $this->parser->parse('_seriesInfo', $Status, true);
-		
-	}
 
     private function playerInfo() {
         $this->load->model('PlayerInfo');
