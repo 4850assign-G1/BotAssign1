@@ -1,10 +1,10 @@
 <?php
-
+defined('BASEPATH') OR exit('No direct script access allowed');
 /*
  * application/controllers/Home.php
  */
 
-class Home extends CI_Controller {
+class Home extends Application {
 
     function __construct() {
         parent::__construct();
@@ -15,6 +15,7 @@ class Home extends CI_Controller {
         $this->load->view('_MasterpageNavBar');
 		$this->gameStatus();
         $this->playerInfo();
+		$this->userLogin();
     }
 	
 	private function gameStatus() {
