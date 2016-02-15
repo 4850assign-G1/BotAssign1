@@ -12,7 +12,6 @@ Class Application extends CI_Controller {
 		$this->errors = array();
 		
 		$this-> userLogin();
-		$this-> reload();
 	}
 	
 	function userLogin(){
@@ -21,22 +20,10 @@ Class Application extends CI_Controller {
 		if(!empty($username)){
 			$this->load->model('PlayerLogin');
 			
-			if($username === $this->PlayerLogin->get(array('player'=>$username))['Player'])
+			if($username === $this->PlayerLogin->get(array('player'=>$username))['player'])
 			{
 				$this->session->set_userdata(array('username'=>$username));
 			}
-		}
-	}
-	
-	function reload(){
-		if($this->session->userdata('username'))
-		{
-			$this->data['user_welcome'] = $this->session->userdata('username');
-		}
-		else
-		{
-			$this->data['user_welcome'] = '';
-			
 		}
 	}
 

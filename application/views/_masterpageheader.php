@@ -8,7 +8,7 @@
 		</td>
 		<td>
 			<form name='loginForm' id='loginForm' method='POST'>
-				{reload}<br/>
+				{userWelcome}<br/>
 				<label for='username'>Username: </label>
 				<input type='text' name='username' id='username' size='15'>
 				<input type='hidden' name='do' value='{loginDo}'>
